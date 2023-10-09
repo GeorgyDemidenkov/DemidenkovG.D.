@@ -1,99 +1,97 @@
-print("Введите числи а ")#1
-a=int(input())
-print("Введите число b ")
-b=int(input())
-print("Введите число c ")
-c=int(input())
+#1
+a=int(input("Введите числи а "))
+b=int(input("Введите число b "))
+c=int(input("Введите число c "))
 print("Сумма", a+b+c)
 
 
-print("введите 1 катет-")#2
-a=int(input())
-print("введите 2 катет-")
-b=int(input())
+#2
+a=int(input("введите 1 катет-"))
+b=int(input("введите 2 катет-"))
 print("Площадь", 1/2*a*b)
 
 
-print("введите количество минут с начала суток")#3
-a=int(input())
+#3
+a=int(input("введите количество минут с начала суток"))
 print("Время", (a//60)%24, a%60)
 
 
-print("введите расстояние между рядами")#4
-a=int(input())
-print("введите расстояние между дырочками")
-b=int(input())
-print("введите длина конца шнурка")
-l=int(input())
-print("введите количество дырочек")
-N=int(input())
-print(2*N+(2*l-1)*a+2*(l-1)*b)
+def abc(a,b,l,N):
+    print(2*N+(2*l-1)*a+2*(l-1)*b)
+#4
+a=int(input("введите расстояние между рядами"))
+b=int(input("введите расстояние между дырочками"))
+l=int(input("введите длина конца шнурка"))
+N=int(input("введите количество дырочек"))
+abc(a,b,l,N)
 
 
-print("введите первое число")#5
-a=int(input())
-print("введите второе ")
-b=int(input())
-print("введите третье")
-c=int(input())
-if a<b and a<c:
-    d=a
-elif b<c and b<a:
-    d=b
-else:
-    d=c
+def aaa(a,b,c):
+    if a<b and a<c:
+        d=a
+    elif b<c and b<a:
+        d=b
+    else:
+        d=c
+    return d
+#5
+a=int(input("введите первое число"))
+b=int(input("введите второе "))
+c=int(input("введите третье"))
+d=aaa(a,b,c)
 print("Наименьшее", d)
 
 
-print("введите строку 1")#6
-a=int(input())
-print("введите столбец 1")
-b=int(input())
-print("введите строку 2")
-c=int(input())
-print("введите столбец 2")
-d=int(input())
-e=(a+b)%2
-f=(c+d)%2
-if e+f==0:
-    print("да")
-else:
-    print("нет")
+def bbb(a,b,c,d):
+    e=(a+b)%2
+    f=(c+d)%2
+    if e+f==0:
+        print("да")
+    else:
+        print("нет")
+#6
+a=int(input("введите строку 1"))
+b=int(input("введите столбец 1"))
+c=int(input("введите строку 2"))
+d=int(input("введите столбец 2"))
+bbb(a,b,c,d)
 
 
-print("введите год")#7
-a=int(input())
-if a%4==0 and a%100!=0:
-    print("да")
-elif a%400==0:
-    print("да")
-else:
-    print("нет")
+def ccc(a):
+    if a%4==0 and a%100!=0:
+        print("да")
+    elif a%400==0:
+        print("да")
+    else:
+        print("нет")
+#7
+a=int(input("введите год"))
+ccc(a)
 
 
-print("введите первое число")#8
-a=int(input())
-print("введите второе ")
-b=int(input())
-print("введите третье")
-c=int(input())
-if a==b and b==c:
-    print(3)
-elif a==b or b==c or a==c:
-    print(2)
-else:
-    print(0)
+def ddd(a,b,c):
+    if a==b and b==c:
+        print(3)
+    elif a==b or b==c or a==c:
+        print(2)
+    else:
+        print(0)
+#8
+a=int(input("введите первое число"))
+b=int(input("введите второе "))
+c=int(input("введите третье"))
+ddd(a,b,c)
 
 
-print("введите первое число")#9
-a=int(input())
-print("введите второе ")
-b=int(input())
-print("введите третье")
-c=int(input())
-if n*m>k and k%n==0:
-    print("да")
-elif n*m>k and k%m==0:
-    print("да")
-else:
-    print("нет")
+def eee(a,b,c):
+    if a*b>c and c%a==0:
+        print("да")
+    elif a*b>c and c%b==0:
+        print("да")
+    else:
+        print("нет")
+#9
+a=int(input("введите первое число"))
+b=int(input("введите второе "))
+c=int(input("введите третье"))
+eee(a,b,c)
