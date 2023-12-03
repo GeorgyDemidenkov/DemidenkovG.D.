@@ -24,6 +24,6 @@ def writefile(file_name, maxelrow, minelcolumn):
 input_file_name = "ДемиденковГеоргийДмитриевич_У-234_vvod.txt"
 output_file_name = "ДемиденковГеоргийДмитриевич_У-234_vivod.txt"
 
-re = readfile(input_file_name)
-maxelrow, minelcolumn = find(re)
+A = readfile(input_file_name)
+maxelrow, minelcolumn = find(A)
 writefile(output_file_name, maxelrow, minelcolumn)
