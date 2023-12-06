@@ -28,3 +28,9 @@ try:
             output_file.write(' '.join(map(str, row)) + '\n')
 
     print(f"Результаты были записаны в файл '{output_filename}'")
+except FileNotFoundError:
+    print("Файл не найден")
+except Exception as e:
+    print(f"Произошла ошибка: {e}")
+
+
