@@ -15,7 +15,7 @@ def findmaxel(matrix):
     return matrix
 
 input_filename = "ДемиденковГеоргийДмитриевич_У-234_vvod.txt"
-output_filename = "ДемиденковГеоргийДмитриевич_У-234_vivod.txt"
+output_filename = "ДемиденковГеоргийДмитриевич_У-234_vivod2.txt"
 
 try:
     with open(input_filename, 'r') as file:
